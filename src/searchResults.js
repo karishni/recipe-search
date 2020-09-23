@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import './searchResults.css';
 import { Link } from 'react-router-dom';
 
 
@@ -32,22 +33,22 @@ function SearchResults({match}){
 
 
   return(
-    <div>
+    <div className="background2">
+
+      <div className="nav-bar">
+        <h1 className="web-name">WEBSITE NAME</h1>
+      </div>
 
       {error && <div>Something went wrong ...</div>}
 
       {isLoading ? (
         <div>Loading ...</div>
       ) : (
-    <div>
+    <div className="container">
       {data.recipes.map(item =>(
-        <div key={item._id} >
-          <div>
-      <p> <img alt={item.title} src={item.image_url}/><Link to={`/recipe/${item.recipe_id}`}>{item.title}</Link><br/> 
-               Social Rank: {item.social_rank} <br/> 
-               Publisher: {item.publisher}</p>
-         <br/>
-          </div>
+        <div key={item._id} className="single">
+          <img alt={item.title} src={item.image_url}/>
+      <span> <Link to={`/recipe/${item.recipe_id}`}>{item.title}</Link></span>
         </div>
       ))}
     </div>
