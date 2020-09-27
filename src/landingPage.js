@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import SearchResults from './searchResults';
 import Recipe from './recipe';
-import './landingPage.css';
 import { BrowserRouter,Switch,Link,Route } from 'react-router-dom';
 
 function App(){

@@ -47,8 +47,10 @@ function SearchResults({match}){
     <div className="container">
       {data.recipes.map(item =>(
         <div key={item._id} className="single">
-          <img alt={item.title} src={item.image_url}/>
-      <span> <Link to={`/recipe/${item.recipe_id}`}>{item.title}</Link></span>
+          <img className="search-img" alt={item.title} src={item.image_url}/>
+          <div className="link">
+            <Link to={`/recipe/${item.recipe_id}`}>{item.title}</Link>
+          </div>
         </div>
       ))}
     </div>
