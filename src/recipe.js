@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './searchResults.css';
+import './style.css';
 
 function Recipe({ match }){
 
@@ -28,20 +28,30 @@ function Recipe({ match }){
       const ingredient = () =>{
       if(data.ingredients){
         return(
-          <div>
-          <ul>
+          <div className="page">
+           <div><h2>{data.title}</h2>
+           <h6>SOCIAL RANK:{data.social_rank}</h6>
+          <h6>PUBLISHER: {data.publisher}</h6></div>
+          <div className="img-text">
+          <ul className="list">
             {data.ingredients.map(item=>(
-              <li><div>{item}</div></li>
+              <li className="ingredients"><div>{item}</div></li>
             ))}
           </ul>
-          <img src={data.image_url}/>
+          <img className="single-img" src={data.image_url}/>
+          </div>
           </div>
         )
       }
     }
 
     return(
-    <div>{ingredient()}</div>
+      <div>
+       <div className="nav-bar">
+        <h1 className="web-name">WEBSITE NAME</h1>
+       </div>
+       <div className="background3">{ingredient()}</div>
+      </div>
     )
 }
 

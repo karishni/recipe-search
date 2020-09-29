@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './searchResults.css';
+import './style.css';
 import { Link } from 'react-router-dom';
 
 
@@ -49,7 +49,7 @@ function SearchResults({match}){
         <div key={item._id} className="single">
           <img className="search-img" alt={item.title} src={item.image_url}/>
           <div className="link">
-            <Link to={`/recipe/${item.recipe_id}`}>{item.title}</Link>
+            <Link to={`/${item.recipe_id}`}>{item.title}</Link>
           </div>
         </div>
       ))}
