@@ -7,69 +7,81 @@ body, html {
 }
 .background{
     height: 655px;
-    background: linear-gradient(90deg, #DACFAA 50%, #345167 50%);
-    /* display: flex;
-    flex-direction: column; */
+    /* background: linear-gradient(90deg, #DACFAA 50%, #345167 50%); */
+    background-image: url('BLUE.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column; 
     /* justify-content: center; */
+    align-items: center;
 }
 
 input{
-    position: absolute;
-width: 437px;
-height: 44px;
-left: 463px;
-top: 333px;
+    /* position: absolute; */
+width: 32vw;
+height: 3.2vw;
+/* left: 463px;
+top: 333px; */
 border: 0;
 background: #ffffff;
 border-radius: 13px;
 font-size: 20px;
 padding-left: 10px;
+margin-bottom: 15px;
 }
 
-button{
-    position: absolute;
-width: 172px;
-height: 40px;
-left: 596px;
-top: 400px;
+.search-btn{
+    /* position: absolute; */
+width: 12.6vw;
+height: 2.9vw;
+/* left: 596px;
+top: 400px; */
 border: 0;
 background: #E38210;
 box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
 border-radius: 20px;
-font-size: 20px;
-line-height: 28px;
+font-size: 1.5vw;
+/* line-height: 28px; */
 color: white;
 }
 
 .name{
-    position: absolute;
-width: 407px;
-height: 142px;
-left: 479px;
-top: 0px;
+    /* position: absolute; */
+/* width: 407px;
+height: 142px; */
+/* left: 479px;
+top: 0px; */
 text-align: center;
 font-family: Rozha One;
 font-style: normal;
 font-weight: normal;
-font-size: 6.6vw;
-line-height: 130px;
+font-size: 5.5vw;
 text-align: center;
-color: #212121;
+color: #EAEAEA;
+/* offset: none; */
+margin-top: 100px;
+margin-bottom: 25px;
 }
 
 /****search results****/
 
 
 .background2{
-    background-color: #DACFAA;
-    height: 100%;
+    /* background-color: #DACFAA; */
+    background-image: url('GRAY.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 100%; */
 }
 
 .nav-bar{
     width: 100%;
-    height: 7.4vw;
-    background-color: #345167;
-
+    height: 7.2vw;
+    /* background-color: #345167; */
+    background-image: url('BLUE.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .web-name{
@@ -84,7 +96,8 @@ color: #212121;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 1.5vw 0 1.5vw 0;
+    padding: 1.5vw 0 1.5vw 0;
+    /* margin: 1.5vw 0 1.5vw 0; */
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
@@ -112,7 +125,7 @@ color: #212121;
 
 .link{
     width: 66%;
-    font-size: 1.5vw;
+    font-size: 1.7vw;
     text-decoration: black;
     /* position: relative; */
     /* bottom: 6.6vw;
@@ -131,6 +144,55 @@ a:visited{
     color: black;
 }
 
+button{
+    cursor: pointer;
+}
+
+.cont{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.error{
+    /* width: 427px;
+    height: 270px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25); */
+    text-align: center;
+    font-family: Roboto;
+    font-size: 48px;
+    color: #B60000;
+    vertical-align: middle;
+}
+
+.error > span{
+    font-size: 36px;
+}
+
+.err-con{
+    width: 427px;
+    height: 270px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.back-btn{
+    background: #B60000;
+    /* border-radius: 20px; */
+    border: none;
+    width: 172px;
+    height: 40px;
+    margin-top: 20px;
+    color: white;
+}
+
 /****** single ******/
 
 #root{
@@ -144,6 +206,9 @@ html, body{
 .background3{
     display: flex;
     justify-content: center;
+    background-image: url('GRAY.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .page{
@@ -151,9 +216,9 @@ html, body{
     width: 67vw;
     /*height: 800px; */
     left: 17%;
-    background: #DACFAA;
-    margin: 20px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    background: #ffffff;
+    margin: 25px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
 }
 
 .single-img{
@@ -186,9 +251,9 @@ h6{
 }
 
 .ingredients{
-    line-height: 1.6vw;
-    font-size: 1.3vw;
-    margin-top: 10px;
+    line-height: 2vw;
+    font-size: 1.5vw;
+    /* margin-top: 10px; */
     font-weight: 400;
 }
 
