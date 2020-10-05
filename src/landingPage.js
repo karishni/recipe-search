@@ -24,7 +24,7 @@ const LandingPage=()=>{
 
     return(
         <div className="background">
-          <div><h1 className="name">RECIPES<br/> OF<br/> YESTERDAY</h1></div>
+          <div><h1 className="name">RECIPES OF YESTERDAY</h1><p>Search for quick and easy recipes now!</p></div>
           <div><input type="text" onChange={event => setFoodName(event.target.value)}/></div>
           <div><Link to={`/searchResults/${foodName}`} >
             <button className="search-btn">Start Cooking!</button>
